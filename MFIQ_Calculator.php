@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +65,31 @@
 </style>
 </head>
 <body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAwxYExrznISCI62-xwaQ6LrGmYXD07iDo",
+    authDomain: "mfiq-calculator.firebaseapp.com",
+    projectId: "mfiq-calculator",
+    storageBucket: "mfiq-calculator.appspot.com",
+    messagingSenderId: "90488605405",
+    appId: "1:90488605405:web:8a4b918efa4ca02fc22934",
+    measurementId: "G-CF4M0SGYMT"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 <div class="container">
     <h2>Calculate MFIQ Score</h2>
     <form method="post" action="calculate.php" class="grid-container">
