@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Value Calculation</title>
+<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+<div class="container">
+    <h2>Calculate Result</h2>
+    <form method="post" action="calculator.php">
+        <?php
+        for ($i = 1; $i <= 17; $i++) {
+            echo '<input type="number" name="value'.$i.'" id="value'.$i.'" min="1" max="5" required>';
+        }
+        ?>
+        <input type="submit" name="submit" value="Calculate">
+    </form>
+</div>
+</body>
+</html>
