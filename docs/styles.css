@@ -77,3 +77,37 @@ button:hover {
 .value-input.invalid {
     border: 2px solid red; /* Highlight invalid inputs with red border */
 }
+
+#pdf-upload-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#pdf-upload {
+    margin-bottom: 20px;
+}
+
+#additional-info-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#additional-info-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .input-container, #additional-info-container, #pdf-upload-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -33,10 +33,24 @@
         
         <button id="calculate-btn">Calculate</button>
         <button id="clear-all-btn" class="clear-btn">Clear All</button>
-
+        
         <div id="result-container" class="result"></div>
-    </div>
+        
+        <div id="additional-info-container">
+            <h2>Additional Information</h2>
+            <p style="color: lightslategrey"><em>If missing from the form, add patient's name and date of form completion</em></p>
+            <input type="text" id="name-input" placeholder="Enter Name">
+            <input type="text" id="date-input" placeholder="Enter Date (02/20/2024)">
+        </div>
 
+        <div id="pdf-upload-container">
+            <h2>Upload MFIQ Form PDF</h2>
+            <p style="color: lightslategrey"><em>Calculate score above before adding it to the PDF</em></p>
+            <input type="file" id="pdf-upload" accept="application/pdf">
+            <button id="edit-pdf-btn">Add Score to PDF</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/pdf-lib@^1.16.0/dist/pdf-lib.min.js"></script>   
     <script src="script.js"></script>
 </body>
 </html>
