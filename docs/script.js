@@ -72,7 +72,7 @@ document.getElementById('edit-pdf-btn').addEventListener('click', async function
     if (name) {
         firstPage.drawText(name, {
             x: 125, // Adjust the position as needed
-            y: width + 88, // Adjust the position as needed
+            y: width + 102, // Adjust the position as needed
             size: fontSize,
             color: PDFLib.rgb(0, 0, 0)
         });
@@ -82,7 +82,7 @@ document.getElementById('edit-pdf-btn').addEventListener('click', async function
     if (date) {
         firstPage.drawText(date, {
             x: width - 220, // Adjust the position as needed
-            y: width + 88, // Adjust the position as needed
+            y: width + 102, // Adjust the position as needed
             size: fontSize,
             color: PDFLib.rgb(0, 0, 0)
         });
