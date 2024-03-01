@@ -20,6 +20,7 @@ h1 {
 
 .input-container {
     margin-bottom: 20px;
+    counter-reset: input-counter;
 }
 
 .value-input {
@@ -34,6 +35,13 @@ h1 {
     margin-right: 0; /* Remove margin-right for the last input in each row */
 }
 
+.value-input::before {
+    counter-increment: input-counter; /* Increments the counter */
+    content: "Value " counter(input-counter) ": "; /* Displays the counter */
+    font-weight: bold;
+}
+
+
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -42,6 +50,8 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 
 .container {
     position: relative;

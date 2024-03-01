@@ -10,25 +10,98 @@
     <div class="container">
         <h1>MFIQ Form Score Calculator</h1>
         <p>Please input the 17 values on the MFIQ Form (from 1 to 5):</p>
-        <p style="color: lightslategrey"><em>You can hit the "Tab key" to quickly move on to the next value</em></p>
+        <p style="color: lightslategrey"><em>You can hit the "Tab key" to quickly move on to the next question</em></p>
         <div class="input-container">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 1">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 2">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 3">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 4">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 5">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 6">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 7">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 8">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 9">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 10">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 11">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 12">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 13">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 14">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 15">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 16">
-            <input type="number" min="1" max="5" class="value-input" placeholder="Value 17">
+
+            <p><b>How much difficulty do you have, owing to your mandibular function, with:</b></p>
+            
+            <div class="input-group">
+                <label for="value1">1. social activities (with family, friends, etc.)?</label>
+                <input type="number" id="value1" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+            
+            <div class="input-group">
+                <label for="value2">2. speaking? </label>
+                <input type="number" id="value2" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+            
+            <div class="input-group">
+                <label for="value3">3. taking a large bite (e.g. from an apple)? </label>
+                <input type="number" id="value3" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value4">4. chewing hard food? </label>
+                <input type="number" id="value4" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value5">5. chewing soft food? </label>
+                <input type="number" id="value5" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value6">6. work and/or daily activities? </label>
+                <input type="number" id="value6" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value7">7. drinking? </label>
+                <input type="number" id="value7" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value8">8. laughing?</label>
+                <input type="number" id="value8" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value9">9. chewing resistant food?</label>
+                <input type="number" id="value9" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value10">10. yawning? </label>
+                <input type="number" id="value10" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value11">11. kissing? </label>
+                <input type="number" id="value11" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <p><b> How much difficulty do you have, owing to your mandibular function, with eating:</b></p>
+
+            <div class="input-group">
+                <label for="value12">1. a hard cookie? </label>
+                <input type="number" id="value12" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value13">2. meat (e.g. pork or beef)? </label>
+                <input type="number" id="value13" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value14">3. a raw carrot? </label>
+                <input type="number" id="value14" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value15">4. french bread/white bread?</label>
+                <input type="number" id="value15" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value16">5. peanuts or almonds?</label>
+                <input type="number" id="value16" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
+            <div class="input-group">
+                <label for="value17">6. an apple (not cut into pieces)?</label>
+                <input type="number" id="value17" min="1" max="5" class="value-input" placeholder="1-5">
+            </div>
+
         </div>
         
         <button id="calculate-btn">Calculate</button>
